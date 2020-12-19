@@ -48,7 +48,7 @@ class Navbar extends React.Component {
              
                 <li className='nav-item'>
                   <Link to='/events/new' className='nav-links' onClick={this.closeMobileMenu}>
-                    Create Event
+                    Home
                 </Link>
                 </li>
               
@@ -56,7 +56,7 @@ class Navbar extends React.Component {
              
                 <li className='nav-item'>
                   <Link to='/events' className='nav-links' onClick={this.closeMobileMenu}>
-                    View Events
+                    Projects
                 </Link>
                 </li>
               
@@ -64,24 +64,15 @@ class Navbar extends React.Component {
              
               <li className='nav-item'>
                 <Link to='/users/active' className='nav-links' onClick={this.closeMobileMenu}>
-                 
+                 About
                 </Link>
               </li>
-    
-                <li className='nav-item'>
-                  <Link to='' className='nav-links' onClick={() => {
-                    this.closeMobileMenu()
-                    this.props.dispatch(removeActiveUser())
-                  }}>
-                    Logout
-                  </Link>
-                </li>
-    
-                <li className='nav-item'>
-                  <Link to='/users/new' className='nav-links' onClick={this.closeMobileMenu}>
-                    Sign up!
+
+              <li className='nav-item'>
+                <Link to='/users/active' className='nav-links' onClick={this.closeMobileMenu}>
+                 News
                 </Link>
-                </li>
+              </li>
             </ul>
           </div>
         </nav>

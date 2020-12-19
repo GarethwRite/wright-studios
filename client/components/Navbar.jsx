@@ -47,29 +47,25 @@ class Navbar extends React.Component {
 
              
                 <li className='nav-item'>
-                  <Link to='/events/new' className='nav-links' onClick={this.closeMobileMenu}>
+                  <Link to='/' className='nav-links' onClick={this.closeMobileMenu}>
                     Home
                 </Link>
                 </li>
               
-
-             
                 <li className='nav-item'>
-                  <Link to='/events' className='nav-links' onClick={this.closeMobileMenu}>
+                  <Link to='/Projects' className='nav-links' onClick={this.closeMobileMenu}>
                     Projects
                 </Link>
                 </li>
               
-
-             
               <li className='nav-item'>
-                <Link to='/users/active' className='nav-links' onClick={this.closeMobileMenu}>
+                <Link to='/About' className='nav-links' onClick={this.closeMobileMenu}>
                  About
                 </Link>
               </li>
 
               <li className='nav-item'>
-                <Link to='/users/active' className='nav-links' onClick={this.closeMobileMenu}>
+                <Link to='/News' className='nav-links' onClick={this.closeMobileMenu}>
                  News
                 </Link>
               </li>

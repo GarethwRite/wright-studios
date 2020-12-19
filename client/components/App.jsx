@@ -5,6 +5,9 @@ import { fetchFruits } from '../actions'
 
 import Home from './Home'
 import Navbar from './Navbar'
+import Projects from './Projects'
+import About from './About'
+import News from './News'
 
 export class App extends React.Component {
   state = {
@@ -21,7 +24,12 @@ export class App extends React.Component {
       <div className='app'>
       <Router>
         <Navbar/>
+      <Switch>
       <Route exact path='/' component={Home} /> 
+      <Route exact path='/Projects' component={Projects} /> 
+      <Route exact path='/About' component={About} /> 
+      <Route exact path='/News' component={News} /> 
+      </Switch>
       </Router>
       </div>
       </>

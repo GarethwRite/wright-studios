@@ -36,8 +36,8 @@ class Navbar extends React.Component {
       <>
         <nav className="navbar">
           <div className="navbar-container">
-            <Link to="/" className="navbar-logo" onClick={this.closeMobileMenu}>
-              WS <i className='fas fa-gamepad' />
+            <Link to="/" className="navbar-home-link" onClick={this.closeMobileMenu}>
+              WS
             </Link>
             <div className='menu-icon' onClick={this.handleClick}>
               <i className={this.state.click ? 'fas fa-times' : 'fas fa-bars'} />

@@ -1,0 +1,49 @@
+.infoFlexBox{
+    display: flex;
+}
+
+.AboutWebInfo{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 20px;
+}
+
+.AboutMeInfo{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 310px;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .infoFlexBox{
+        display: block;
+    }
+    .AboutMeInfo{
+      width: fit-content;
+      overflow: hidden;
+    }
+    .AboutWebInfo{
+   width: fit-content;
+    }
+  }
+
+  .infoPageH2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .infoPageP{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .ProfilePicture{
+    width: 280px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }

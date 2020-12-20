@@ -1,4 +1,11 @@
 .homeLogo{
     width: 100vw;
-    height: 60%;
+    height: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeLogo{
+       background-image: url(../../server/public/images/logo.png);
+       z-index: 10;
+    }
 }
